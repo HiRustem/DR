@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С ДНЁМ РОЖДЕНИЯ</title>
+
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--Прелоадер-->
+    <div class="preloader">
+        <div class="preloader__image"></div>
+        <p class="preloader_text">Установка</p>
+    </div>
+
+    <!--Фоновая музыка-->
+    <audio src="assets/audio/blazer.mp3" autoplay="true"></audio>
+
+    <!--Основная страница-->
+    <div class="page">
+        <div class="header">
+            <h1 class="header_text">С ДНЁМ РОЖДЕНИЯ</h1>
+        </div>
+        <div class="main">
+            <div class="love_wrapper">
+                <div class="love_cols">
+                    <div class="love_col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="love_container">
+                            <div class="love_front">
+                                <div class="love_inner gif1"></div>
+                            </div>
+                            <div class="love_back">
+                                <div class="love_inner">
+                                    <p>Пожелание</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="love_col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="love_container">
+                            <div class="love_front">
+                                <div class="love_inner gif2"></div>
+                            </div>
+                            <div class="love_back">
+                                <div class="love_inner">
+                                    <p>Пожелание</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="love_col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="love_container">
+                            <div class="love_front">
+                                <div class="love_inner gif3"></div>
+                            </div>
+                            <div class="love_back">
+                                <div class="love_inner">
+                                    <p>Пожелание</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="love_col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="love_container">
+                            <div class="love_front">
+                                <div class="love_inner gif4"></div>
+                            </div>
+                            <div class="love_back">
+                                <div class="love_inner">
+                                    <p>Пожелание</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(window).on('load',function() {
+            $('.preloader').delay(4100).fadeOut('slow');
+        });
+    </script>
+</body>
+</html>
